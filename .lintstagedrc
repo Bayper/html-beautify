@@ -3,6 +3,6 @@
     "*.ts": "lint",
   },
   "ignore": [
-    "**/lib/**/*.d.ts"
+    "**/typings/**/*.d.ts"
   ]
 }
