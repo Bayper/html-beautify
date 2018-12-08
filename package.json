@@ -44,16 +44,21 @@
     "build": "npm run clean && tsc && tsc -m es6 --outDir lib-esm && webpack",
     "clean": "shx rm -rf _bundles lib lib-esm",
     "lint": "tslint src/**/*.{ts,tsx}",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -r ts-node/register src/**/*.spec.ts"
   },
   "dependencies": {
     "js-beautify": "^1.8.8"
   },
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
     "awesome-typescript-loader": "^5.2.1",
+    "chai": "^4.2.0",
     "husky": "^1.2.0",
     "lint-staged": "^6.1.1",
+    "mocha": "^5.2.0",
     "shx": "^0.3.2",
+    "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
     "tslint-eslint-rules": "^5.4.0",
     "typescript": "^3.2.1",
